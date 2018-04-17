@@ -40,8 +40,8 @@ xmlns:cs="antlib:com.puppycrawl.tools.checkstyle.ant">
     <property name="revision.properties" value="revision.properties" />
     <property file="${basedir}/src/java/${revision.properties}" />
     
-    <property name="javac.target" value="1.7" />
-    <property name="javac.source" value="1.7" />
+    <property name="javac.target" value="1.8" />
+    <property name="javac.source" value="1.8" />
     <property name="build.encoding" value="utf8" />
 
     <property name="src.dir" value="${basedir}/src" />
@@ -1805,7 +1805,7 @@ xmlns:cs="antlib:com.puppycrawl.tools.checkstyle.ant">
      </condition>
 
      <target name="ant-eclipse-download" unless="ant-eclipse.jar.exists">
-       <get src="http://downloads.sourceforge.net/project/ant-eclipse/ant-eclipse/1.0/ant-eclipse-1.0.bin.tar.bz2"
+       <get src="https://downloads.sourceforge.net/project/ant-eclipse/ant-eclipse/1.0/ant-eclipse-1.0.bin.tar.bz2"
             dest="${src.dir}/java/ant-eclipse-1.0.bin.tar.bz2" usetimestamp="false" />
 
        <bunzip2 src="${src.dir}/java/ant-eclipse-1.0.bin.tar.bz2"/>
